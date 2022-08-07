@@ -13,3 +13,7 @@ app.on('ready',()=>{
         app.quit();
     });
 });
+
+const mensaje=()=>{
+    console.log("Hola mundo");
+}
