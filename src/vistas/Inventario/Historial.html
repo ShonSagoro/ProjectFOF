@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaInventario/inventarioHistorial.css">
+    <title>Inventario Historial</title>
+</head>
+<body>
+    <!-- barra de opciones -->
+    <div class="header">
+            <div class="container">
+                    <div class="btn-menu">
+                        <label for="btn-menu">| | |</label>
+                    </div>
+                    <div>
+                        <a class="home" href="../../indexInventario.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                    </div>
+                </div>
+    </div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <div class="bloque"></div>
+            <ul>  
+                <li><a href="../../indexInventario.html">PAGINA INICIAL</a></li>  
+                <li><a href="./RegistroProducto.html">Registro</a></li>
+                <li><a href="./Modificar.html">Modificar</a></li>
+            </ul>
+            <label for="btn-menu">| | |</label>
+            <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+        </div>
+    </div>
+    <div class="Contenido">
+        <div class="Subcontenido1">
+            <span>Historial</span>
+            <img src="../../resources/Image/iconos figma/magnifying-glass.png" id="buscarProducto">
+            <input id="BuscarTxt" placeholder="Buscar">
+        </div>
+        
+        <div class="Subcontenido2">
+            <span>Productos</span>
+            <div id="Section_Producto">
+                <!-- <ul id="lista_productos">
+                    <li>
+                        <i></i>
+                        <p>Producto1</p>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- <ul class="lista_producto" id="lista_producto">
+                <li><input type="checkbox" id="producto1"> <label for="producto1">Producto 1</label></li>
+                <li><input type="checkbox" id="producto2"> <label for="producto2">Producto 2</label></li>
+                <li><input type="checkbox" id="producto3"> <label for="producto3">Producto 3</label></li>
+                <li><input type="checkbox" id="producto4"> <label for="producto4">Producto 4</label></li>
+            </ul> -->
+        </div>
+        <div class="Subcontenido3">
+            <div>
+                <span>Descripcion:</span>
+                <label id="txtDescripcionB"></label>
+            </div>
+            <div>
+                <span>Precio:</span>
+                <label id="txtPrecioB"></label>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../resources/JavaScript/inventario/mostrarDatos.js" type="module"></script>
+</html>

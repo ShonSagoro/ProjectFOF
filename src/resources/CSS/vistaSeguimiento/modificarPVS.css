@@ -1,0 +1,145 @@
+.Contenido{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.Contenido .Buscar{
+    margin-bottom: 10px;
+}
+
+.Contenido .Buscar input{
+    background: #CCD0DE;
+    border: none;
+    outline: none;
+    height: 30px;   
+    width: 90%;
+    color: rgb(56, 40, 12);
+    font-size: 15px;
+    padding: 10px;
+}
+.Contenido .Buscar img{
+    height: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 15px;
+    float: right;
+}
+
+.Contenido .Subcontenido1{
+    
+    width: 100%;
+    height: 45vh;
+    padding: 20px;
+    background-color:gainsboro;
+    border: 1px solid rgb(26, 3, 34);
+    overflow: hidden;
+    overflow-y: scroll;  
+}
+
+.Contenido li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    margin: 5px 0;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.Contenido .liButon {
+    cursor: pointer;
+    align-items: center;
+    color:#1f1f1f;
+    padding: 10px;
+    border: none;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.Contenido .P0{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 40px;
+    color: white;
+    margin: 5px 0;
+    background-color:transparent;
+    border-radius: 20px;
+}
+
+.Contenido .P0:hover {
+    background-color: #06070c;
+}
+
+.Contenido li .productoDiv{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 10px;  
+}
+
+.Contenido li:hover {
+    background:darkorange;
+}
+
+.Contenido .Subcontenido2 input{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background:darkorange;
+    color: #fff;
+    font-size: 14px;
+}
+
+.Contenido .Subcontenido2 input:hover{
+    cursor: pointer;
+    background:#d96028;
+    color: rgb(251, 222, 222);
+}
+
+.Contenido .Buscar #txtVerificar{
+    text-align: center;
+    background: transparent;
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    color: #ff0101;
+}
+
+
+.Contenido .Subcontenido2 #precioPedidoB{
+    text-align: center;
+    background: transparent;
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    color: #1f1f1f;
+}
+
+.Contenido .Subcontenido2 #pedidoEliminar{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #e90505;
+    color: #fff;
+    font-size: 14px;
+}
+
+.Contenido .Subcontenido2 #pedidoEliminar:hover{
+    cursor: pointer;
+    background: #4e0415;
+    color: rgb(251, 222, 222);
+}

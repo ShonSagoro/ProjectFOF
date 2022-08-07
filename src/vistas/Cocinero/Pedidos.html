@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaCocinero/pedidoIndividual.css">
+</head>
+<body>
+    <!-- barra de opciones -->
+    <div class="header">
+        <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">| | |</label>
+                </div>
+                <div>
+                    <a class="home" href="../../indexCocinero.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                </div>
+            </div>
+</div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+    <div class="cont-menu">
+        <div class="bloque"></div>
+        <ul>    
+            <li><a href="../../indexCocinero.html">PAGINA INICIAL</a></li>
+            <li><a href="./Todos_pedidos.html">Ver lista</a></li>
+        </ul>
+        <label for="btn-menu">| | |</label>
+        <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+    </div>
+    <!-- <div>
+        <h4>BETA version</h4>
+    </div> -->
+</div>
+<div class="Contenido">
+    <div class="Subcontenido1">
+        <ul id="PedidoActual">
+
+        </ul>
+    </div>
+    <div class="Subcontenido2">
+        <input type="button" value="COMPLETADO" id="pedidoCompletado">
+    </div>
+</div>
+<script src="../../resources/JavaScript/Cocinero/mostrarPedido.js" type="module"></script>
+</body>
+</html>

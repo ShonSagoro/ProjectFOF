@@ -1,0 +1,179 @@
+.Contenido{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    width: 130vh;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Contenido .Subcontenido1 input{
+    background: #CCD0DE;
+    border: none;
+    outline: none;
+    height: 30px;   
+    width: 95vh;
+    color: rgb(32, 58, 98);
+    font-size: 15px;
+    padding: 10px;
+    position: absolute;
+    left: 15%;
+    font-weight: bold;
+}
+
+
+.Contenido .Subcontenido1 img{
+    height: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 35px;
+    float: right;
+
+}
+
+.Contenido .Subcontenido1{
+    padding: 0px 0px 50px 0px;
+}
+
+
+.Contenido .Subcontenido2{
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    color: rgb(6, 15, 55);
+}
+
+.Contenido .Subcontenido2 span{
+    padding: 20px 0px 20px 0px;
+}
+
+.Contenido .Subcontenido2 div #txtDescripcionB{
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    height: 150px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: rgb(32, 58, 98);
+}
+
+.Contenido .Subcontenido2 div #txtPrecioB{
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: rgb(32, 58, 98);
+}
+.Contenido .Subcontenido3{
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    color: rgb(6, 15, 55);  
+}
+
+.Contenido .Subcontenido3 span{
+    padding: 20px 0px 20px 0px;
+    color: rgb(32, 58, 98);
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Contenido .Subcontenido3 div #DescripcionPR{
+    display: block;
+    resize: none;
+    text-decoration: none;
+    background: transparent;
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: rgb(32, 58, 98);
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Contenido .Subcontenido3 div #txtPrecioNuevo{
+    display: block;
+    text-decoration: none;
+    background: transparent;
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: rgb(32, 58, 98);
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Contenido .Subcontenido3 .textarea_count{
+    margin-left: 55%;
+    opacity: 0.5;
+    font-size:small;
+}
+
+.Contenido .Subcontenido4{
+    /* float: right; */
+    margin-left: 86%;
+}
+
+#txtDescripcionBnuevo{
+    color: red;
+    font-weight: 600;
+}
+
+#txtPrecioBnuevo{
+    color: red;
+    font-weight: 600;
+}
+
+#txtDescripcionNot{
+    color:red;
+    font-weight: 600;
+}
+
+#txtPrecioNot{
+    color:red;
+    font-weight: 600;
+}
+
+.Contenido .Subcontenido3 div #btnReemplazar{
+    margin-top: 10px;
+    width: 90%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: #224aec;
+    color: #fff;
+    font-size: 14px;
+}
+.Contenido .Subcontenido3 div #btnReemplazar:hover{
+    cursor: pointer;
+    background: #041568;
+    color: rgb(251, 222, 222);
+}
+
+.Contenido .Subcontenido3 div #btnEliminar{
+    margin-top: 15px;
+    width: 90%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: #fb0000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.Contenido .Subcontenido3 div #btnEliminar:hover{
+    cursor: pointer;
+    background: #940000;
+    color: rgb(251, 222, 222);
+}

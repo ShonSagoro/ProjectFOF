@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/CSS/styleR.css">
+    <link rel="stylesheet" href="./resources/CSS/rolRegistro.css">
+    <link rel="icon" type="Image/png" href="./resources/Image/iconos figma/chef.png">
+    <title>Registro Sesion</title>
+</head>
+<body>
+      <div class="BoxIR">
+        <div class="bloque"></div>
+        
+        <img src="./resources/Image/iconos figma/chef.png" class="logo">
+        <h1>Registro: </h1><br>
+        <!-- Correo -->
+        <label  for="txtCorreoR">Correo: </label>
+        <input id="txtCorreoR" type="email" placeholder="Correo electronico">
+        <!-- UserName -->
+        <label  for="txtUserR">Usuario: </label>
+        <input id="txtUserR" type="text" placeholder="Usuario"> 
+        <!-- Password -->
+        <label  for="txtPassR">Contraseña: </label>
+        <input id="txtPassR" type="password" placeholder="Contraseña"> 
+        <label  for="txtPassRC">Confirmar contraseña: </label>
+        <!-- Password Confirm-->
+        <input id="txtPassRC" type="password" placeholder="Contraseña"> 
+        <label for="rol">¿Quien se registra?</label>
+        <div class="select">
+          <select id="rol">
+              <option value="Cocinero">Cocinero</option>
+              <option value="Vendedor">Vendedor</option>
+              <option value="Dueño">Dueño</option>
+              <option value="Encargado">Encargado</option>
+          </select>
+        <div id="direccion">
+
+        </div>
+        <!-- submit -->
+        <input id="btnRegistro" type="submit" value="Registrarse"></input> 
+        <!-- enlace para irse a iniciar sesion -->
+        <label id="validacionRegistro" ></label><br>
+        <a href="index.html">¿Ya tienes una cuenta?, inicia sesion</a>
+        
+        </div>
+      </div>
+      
+
+</body>
+<script src="./resources/JavaScript/Inicio_Registro/registro.js" type="module"></script>
+
+</html>

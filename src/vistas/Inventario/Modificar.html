@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaInventario/inventarioModificar.css">
+    <title>Inventario Modificar</title>
+</head>
+<body>
+    <!-- barra de opciones -->
+    <div class="header">
+            <div class="container">
+                    <div class="btn-menu">
+                        <label for="btn-menu">| | |</label>
+                    </div>
+                    <div>
+                        <a class="home" href="../../indexInventario.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                    </div>
+                </div>
+    </div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <div class="bloque"></div>
+            <ul>  
+                <li><a href="../../indexInventario.html">PAGINA INICIAL</a></li>  
+                <li><a href="./RegistroProducto.html">Registro</a></li>
+                <li><a href="./Historial.html">Historial</a></li>
+            </ul>
+            <label for="btn-menu">| | |</label>
+            <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+        </div>
+    </div>
+    <div class="Contenido">
+        <div class="Subcontenido1">
+            <img id="buscarProducto" src="../../resources/Image/iconos figma/magnifying-glass.png">
+            <input id="BuscarTxt" placeholder="Buscar">
+        </div>
+        
+        <div class="Subcontenido2">
+            <div>
+                <span>Descripcion:</span>
+                <label id="txtDescripcionB"></label>
+            </div>
+            <div>
+                <span>Precio:</span>
+                <label id="txtPrecioB" type="number"></label>
+            </div>
+        </div>
+        <div class="Subcontenido3">
+            <div>
+                <span>Nueva Descripcion:</span>
+                <textarea id="DescripcionPR" onkeypress="Contador_caracteres()" rows="4" maxlength="250" minlength="3" placeholder="Descripcion nueva"></textarea>
+                <span class="textarea_count" id="textarea_count">0/250 (Max. 250 caracteres)</span><br><br>
+                <!-- <input type="text" id="txtDescripcionNuevo" placeholder=""> -->
+            </div>
+            <div>
+                <span>Nueva Precio:</span>
+                <input id="txtPrecioNuevo" placeholder="$00.00" type="number">
+                <input type="button" id="btnReemplazar" value="Reemplazar"><br>
+                <input type="button" id="btnEliminar" value="Eliminar">
+                <label id="verificarAccion"></label>
+            </div>
+        </div>
+        <div class="Subcontenido4">
+
+        </div>
+    </div>
+</body>
+<script src="../../resources/JavaScript/inventario/modificarProducto.js" type="text/javascript"></script>
+</html>

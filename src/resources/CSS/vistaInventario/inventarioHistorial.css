@@ -1,0 +1,95 @@
+.Contenido{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    width: 130vh;
+}
+
+.Contenido .Subcontenido1 input{
+    background: #CCD0DE;
+    border: none;
+    outline: none;
+    height: 30px;   
+    width: 35vh;
+    color: rgb(56, 40, 12);
+    font-size: 15px;
+    padding: 10px;
+    float: right;
+}
+
+
+.Contenido .Subcontenido1 img{
+    height: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 5px;
+    float: right;
+}
+
+
+
+.Contenido .Subcontenido1 span{
+    font-size: 30px;
+}
+
+.Contenido .Subcontenido1{
+    padding: 0px 0px 20px 0px;
+}
+
+
+.Contenido .Subcontenido2 #Section_Producto{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: #1f1f1f;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* transition: all 400ms ease; */
+}
+
+.Contenido .Subcontenido2 div {
+    padding: 2px;
+    
+}
+
+.Contenido .Subcontenido3{
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.Contenido .Subcontenido3 span{
+    padding: 20px 0px 20px 0px;
+    
+}
+
+.Contenido .Subcontenido3 div #txtDescripcionB{
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    height: 150px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    padding: 10px;
+    color: #1f1f1f;
+}
+
+.Contenido .Subcontenido3 div #txtPrecioB{
+    display: block;
+    text-decoration: none;
+    width: 90%;
+    height: 20px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+
+    color: #1f1f1f;
+}
+
+

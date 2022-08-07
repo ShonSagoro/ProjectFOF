@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.opciones{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.opciones h4{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;    
+    position: relative;
+}
+
+
+.opciones .Logo_empresa{
+    height: 70px;
+    padding: 8px;
+    position: relative;
+    top: 0px;
+    left: calc(53% - 50px);
+}
+
+.opciones ul{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    right: 0%;
+    color: #1f1f1f;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease; 
+    position: relative;
+    text-align: center;
+}
+
+
+.opciones ul li a input {
+	width: 200px;
+	height: 40px;
+    margin-top: 20px;
+	padding: 0px 10px 0px 10px;
+	background: #fec63d;
+	border-color: #fec63d;
+    color: #29323d;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px 2px 2px 2px;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+    position: relative;
+} 
+
+.opciones ul li a input:hover { 
+    background: #1a2735;
+    color: #fff; 
+    border-style: double;
+    border-color: #c1dbf6;
+    transition: 0.4s;
+    position: relative;
+}
+
+
+

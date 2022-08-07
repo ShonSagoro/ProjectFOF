@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/CSS/vistaSeguimiento/EstiloIndex.css">
+    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <title>Punto de venta</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">| | |</label>
+                </div>
+                <div>
+                    <a class="home" href="../../indexCocinero.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                </div>
+            </div>
+    </div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+    <div class="cont-menu">
+        <div class="bloque"></div>
+        <ul>    
+            <li><a href="../../indexVendedor.html">PAGINA INICIAL</a></li>
+            <li><a href="./SeguimientoP.html">Seguimiento de pedido</a></li>
+            <li><a  href="./RealizaPedido.html">Realizar pedido</a></li>
+        </ul>
+        <label for="btn-menu">| | |</label>
+        <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+    </div>
+    
+    
+</div>
+    <!-- Inicio de Punto de Venta-->
+    <div class="Contenido">
+        <h4>Punto de venta</h4>
+        <p>Vendedor:<p>    
+        <div class="Busqueda">
+            <input  type="text" id="VendedorB">
+            <img src="../../resources/Image/iconos figma/magnifying-glass.png" id="buscarPedido">
+        </div>
+        <p>Localización:</p>
+        <label id="txtLocalizacionV"></label>
+        <label id="verificacionTXT"></label>
+        <!-- <a href="./Historial.html"><button type="button" class="btnMostrar">Mostrar historial </button></a> -->
+     </div>
+
+</body>
+<script src="../../resources/JavaScript/Vendedor/buscarPuntoVenta.js"></script>
+</html>

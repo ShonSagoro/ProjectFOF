@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.opciones{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.opciones h4{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;    
+}
+
+
+.opciones .Logo_empresa{
+    height: 70px;
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    left: calc(53% - 50px);
+}
+
+.opciones ul{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    right: 28%;
+    color: #1f1f1f;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease; 
+    position: absolute;
+}
+
+
+.opciones ul li a input {
+	width: 200px;
+	height: 40px;
+    margin-top: 20px;
+	padding: 0px 10px 0px 10px;
+	background: #fec63d;
+	border-color: #fec63d;
+    color: #29323d;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px 2px 2px 2px;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+} 
+
+.opciones ul li a input:hover { 
+    background: #1a2735;
+    color: #fff; 
+    border-style: double;
+    border-color: #c1dbf6;
+    transition: 0.2s;
+}
+
+.Historial{
+    width: 130vh;
+    height: 79%;
+    padding: 8px;
+    background-color: #15273a;
+    position: absolute;
+    top: 70px;
+    left: calc(25% - 50px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.Historial div{
+    color: aliceblue;
+    padding-bottom: 50px;
+}
+
+
+.Contenido{
+    position: absolute;
+    top: 35%;
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.Contenido h4{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.Contenido p{
+    font-size: 15px;
+    color: rgb(32, 58, 98);
+    
+}
+
+
+.Contenido #txtLocalizacion{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    color: #1f1f1f;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.Contenido #txtLocalizacionV{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    color: #1f1f1f;
+    font-size: 14px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.Contenido #txtEstado{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 20px;
+    border: 1px solid rgb(34, 26, 3);
+    list-style: none;
+    color: #1f1f1f;
+    text-align: center;
+}
+
+.Contenido a button{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background:darkorange;
+    color: #fff;
+    font-size: 14px;
+}
+
+.Contenido a button:hover{
+    cursor: pointer;
+    background:#d96028;
+    color: rgb(251, 222, 222);
+}
+
+.Contenido .Busqueda{
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+.Contenido .Busqueda input{
+    width: 98%;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+    background: #CCD0DE;
+    padding-left: 10px;
+    
+}
+
+
+.Contenido .Busqueda img{
+    height: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    float: right;
+}
+.contenido{
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 100px 30px;
+}
+
+.contenido .Subcontenido1{
+    width: 100%;
+    height: 55vh;
+    padding: 15px;
+    background-color:gainsboro;
+    border: 1px solid rgb(34, 26, 3);
+    overflow: hidden;
+    overflow-y: scroll;         
+}
+
+.contenido .Subcontenido2 #precioActual{
+   text-align: center;
+   margin-top: 10px;
+}
+
+.contenido .Subcontenido2 input{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background:darkorange;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contenido .Subcontenido2 input:hover{
+    cursor: pointer;
+    background: #041568;
+    color: rgb(251, 222, 222);
+}
+
+.contenido li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    margin: 5px 0;
+    background-color:goldenrod;
+    border-radius: 20px;
+}
+
+.contenido li:hover {
+    background:darkorange;
+}
+
+.contenido .liButon {
+    cursor: pointer;    
+    align-items: center;
+    color:#1f1f1f;
+    padding: 10px;
+    border: none;
+    background-color:bisque;
+    border-radius: 20px;
+}
+
+.contenido .Subcontenido2 #nombrePedido{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    color: #1f1f1f;
+    padding-left: 10px;
+    /* text-decoration: none; */
+    background: #CCD0DE;
+}

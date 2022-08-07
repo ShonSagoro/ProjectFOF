@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <!-- El script de la librería-->
+    <!-- <script src="html2pdf.bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="../../resources/JavaScript/Duenio/generarPDF.js"></script>
+    <!-- Algunos estilos -->
+    <link rel="stylesheet" href="../../resources/CSS/vistaReporte/generarPDF.css">
+</head>
+<body>
+    <!-- SECCIÓN DEL BOTÓN -->
+    <input id="btnCrearPdf" value="Crear PDF">
+    <!-- FIN DE LA SECCIÓN DEL BOTÓN -->
+
+    <!-- REGRESAR A LA PÁGINA ANTERIOR -->
+    <input id="btnRegresar" onclick="history.back()" name="Regresar" value="Regresar">
+    <!-- FIN DE REGRESAR A LA PÁGINA ANTERIOR -->   
+
+    <!-- SECCIÓN DEL CUERPO DEL REPORTE -->
+<div class="titulo">
+    <br><h3>REPORTE DEL DÍA</h3>
+    <label class="subtitulo" id="current_date"></label><br>
+    <label class="subtitulo" id="usuario">Dueño:</label>
+</div>
+<div class="contenedor">
+        <div class="card" style="background-image: url('../../resources/Image/pdfImagen.jpeg')">
+            <div class="textos">
+                <div>
+                    <span>Productos vendidos</span><br>
+                    <label class="info" id="listaProductos"></label>
+                </div><br>
+                <div>
+                    <span>Cantidad</span><br>
+                    <label class="info" id="textCantidsadProducto"></label>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="background-image: url('../../resources/Image/pdfImagen.jpeg')">
+            <div class="textos">
+                <div>
+                    <span>Ventas realizadas</span><br>
+                    <label class="info" id="listaPedidos"></label>
+                </div><br>
+                <div>
+                    <span>Cantidad total</span><br>
+                    <label class="info" id="textCantidadPedidos"></label>
+                </div>
+                <div>
+                    <span>Venta Total</span>
+                    <label class="info" id="txtPrecioG">$00.00</label>
+                </div>
+            </div>
+        </div>
+        <div class="card2" style="background-image: url('../../resources/Image/pdfImagen.jpeg')">
+            <div class="textos">
+                    <span>Ganancia</span>
+                    <label class="info" id="txtGanancia">$00.00</label>
+            </div>
+    </div>
+</div>
+    <!-- FIN DE SECCIÓN DEL CUERPO DEL REPORTE -->
+</body>
+<script src="../../resources/JavaScript/Duenio/mostrarDatos.js" type="module"></script>
+</html>
+

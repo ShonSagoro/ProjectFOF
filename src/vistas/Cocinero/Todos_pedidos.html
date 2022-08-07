@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los pedidos</title>
+    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaCocinero/listaDePedidos.css">
+</head>
+<body>
+    <!-- barra de opciones -->
+    <div class="header">
+        <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">| | |</label>
+                </div>
+                <div>
+                    <a class="home" href="../../indexCocinero.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                </div>
+            </div>
+    </div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <div class="bloque"></div>
+            <ul>    
+                <li><a href="../../indexCocinero.html">PAGINA INICIAL</a></li>
+                <li><a href="./Pedidos.html">Ver pedido</a></li>
+            </ul>
+            <label for="btn-menu">| | |</label>
+            <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+        </div>
+    </div>
+    <div class="Contenido">
+        <label>Lista de pedidos</label>
+        <div class="Subcontenido1">
+            <ul id="orden_pedido">
+
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="../../resources/JavaScript/Cocinero/mostrarListaPedidos.js" type="module"></script>
+</html>

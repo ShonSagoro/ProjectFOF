@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="stylesheet" href="../../resources/CSS/vistaReporte/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaReporte/generarReporte.css">
+</head>
+<body>
+    <!-- barra de opciones -->
+    <div class="header">
+        <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">| | |</label>
+                </div>
+                <div>
+                    <a class="home" href="../../indexReporte.html"><img src="../../resources/Image/iconos figma/home_blanco.png"></a>
+                </div>
+                <!-- <div>
+                    <a class="home" href="javascript:history.back()" style="float:right"><img src="images/botonRegresar.png" height="33" width="90" alt="Regresar"></a>
+                    </div> -->
+            </div>
+</div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+    <div class="cont-menu">
+        <div class="bloque"></div>
+        <ul>    
+            <li><a href="../../indexReporte.html">Pagina principal</a></li>
+        </ul>
+        <label for="btn-menu">| | |</label>
+        <br>
+        <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
+    </div>
+</div>
+<div class="Contenido">
+    <div class="Subcontenido1">
+        <h4>REPORTE</h4>
+    </div>
+    <div class="Subcontenido2">
+        <div>
+            <span>Productos Consumidos</span>
+            <label class="lista" id="listaProductos"></label>
+        </div>
+        <div>
+            <span>Cantidad</span>
+            <label class="casilla" id="textCantidsadProducto"></label>
+        </div>
+    </div>
+    <div class="Subcontenido2">
+        <div>
+            <span>Pedidos Realizados</span>
+            <label class="lista" id="listaPedidos"></label>
+        </div>
+        <div>
+            <span>Ganado</span>
+            <label class="casilla" id="txtPrecioG">$00.00</label>
+            <br>
+            <span>Cantidad</span>
+            <label class="casilla" id="textCantidadPedidos"></label>   
+            <br>
+            <span>Dueño</span>
+            <label class="preInfo" id="usuario"></label><br><!-- -->
+            
+        </div>
+    </div>
+    <div class="Subcontenido3">
+        <a class="generarPDF" href="generarPDF.html"><input class="generarPDF" type="button" value="GENERAR PDF"></a>
+    </div><br>
+    <label class="subtitulo" id="current_date"></label>
+</div>
+</body>
+<script src="../../resources/JavaScript/Duenio/mostrarDatos.js" type="module"></script>
+</html>

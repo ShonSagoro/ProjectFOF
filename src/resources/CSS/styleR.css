@@ -1,0 +1,149 @@
+
+  body {
+ 
+    margin: 0;
+    padding: 0;
+    color: #f1c963;
+    background: url(../Image/imagen_figma/FrappeRecortado.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    
+   }
+
+ 
+ .BoxIR{
+    width: 320px;
+    height: 115vh;
+    /* red, green, blue, alpha (opaccity) */
+    background: rgba(5,7,12,0.75); 
+    /*background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75));*/
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+ }
+
+ .BoxIR .logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: calc(58.8% - 50px);
+ }
+
+ .bloque{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    left: calc(55.7% - 50px);
+    background-color: #FDA776;
+    border-radius: 100%;
+} 
+
+
+ .BoxIR h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+ .BoxIR label{
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+     display: block;
+ }
+
+ .BoxIR input{
+     width: 100%;
+     margin-bottom: 20px;
+ }
+ .BoxIR input[type="text"], .BoxIR input[type="password"], .BoxIR input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+.BoxIR select option{
+  background: rgb(30, 1, 1);
+  
+}
+
+  .BoxIR select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(5,7,12,0.05); 
+    outline: none;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  
+  .BoxIR input[type="submit"] {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    width: 100%; 
+    height: 40px;
+    background: #f48a33;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .BoxIR #direccion{
+    margin-top: 20px;
+  }
+  
+  .BoxIR input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+
+  .BoxIR button[type="button"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background: #f48a33;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .BoxIR button[type="button"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .BoxIR a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .BoxIR a:hover {
+    color: #fff;
+  }
+
+  .labelNegado{
+    color: #f03a5f;
+  }
+
+  #validacionRegistro{
+    color: #f03a5f;
+  }
