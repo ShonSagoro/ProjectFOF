@@ -2,7 +2,27 @@ const conexion=require('../../resources/JavaScript/Administrador/conexion/conect
 const botonBuscar=document.querySelector('#buscarProducto');
 const botonReemplazar=document.querySelector('#btnReemplazar');
 const botonEliminar=document.querySelector('#btnEliminar');
+const textareaDescripcion=document.querySelector('#DescripcionPR');
+
 let bandera=0;
+
+textareaDescripcion.addEventListener("keypress",(e)=>{
+    const descLength=textareaDescripcion.value.length+1;
+    const maxLength=250;
+    if(descLength<=maxLength){
+        document.getElementById('textarea_count').innerHTML=descLength+"/250 (Max. 250 caracteres)";
+    }
+});
+
+textareaDescripcion.addEventListener("keydown",(e)=>{
+    if(e.key==="Backspace"){
+        const descLength=textareaDescripcion.value.length-1;
+        if(descLength>=0){
+            document.getElementById('textarea_count').innerHTML=descLength+"/250 (Max. 250 caracteres)";
+        }  
+    }
+});
+
 
 
 const Contador_caracteres=()=>{

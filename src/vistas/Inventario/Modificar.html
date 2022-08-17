@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaInventario/BarraOpcionesInventario.css">
     <link rel="stylesheet" href="../../resources/CSS/vistaInventario/inventarioModificar.css">
+    <script src="../../resources/JavaScript/Administrador/modificarProducto.js" type="module"></script>
     <title>Inventario Modificar</title>
 </head>
 <body>
@@ -33,6 +34,7 @@
             <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
         </div>
     </div>
+    <div class="capa"></div>
     <div class="Contenido">
         <div class="Subcontenido1">
             <img id="buscarProducto" src="../../resources/Image/iconos figma/magnifying-glass.png">
@@ -52,7 +54,7 @@
         <div class="Subcontenido3">
             <div>
                 <span>Nueva Descripcion:</span>
-                <textarea id="DescripcionPR" onkeypress="Contador_caracteres()" rows="4" maxlength="250" minlength="3" placeholder="Descripcion nueva"></textarea>
+                <textarea id="DescripcionPR" rows="4" maxlength="250" minlength="3" placeholder="Descripcion nueva"></textarea>
                 <span class="textarea_count" id="textarea_count">0/250 (Max. 250 caracteres)</span><br><br>
                 <!-- <input type="text" id="txtDescripcionNuevo" placeholder=""> -->
             </div>
@@ -69,5 +71,4 @@
         </div>
     </div>
 </body>
-<script src="../../resources/JavaScript/inventario/modificarProducto.js" type="text/javascript"></script>
 </html>

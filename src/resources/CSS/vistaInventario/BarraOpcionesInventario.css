@@ -110,7 +110,17 @@ body{
 }  
 #btn-menu:checked ~ .opciones{
     z-index: -2;
-}  
+} 
+
+
+#btn-menu:checked ~ .registro{
+    z-index: -2;
+} 
+
+#btn-menu:checked ~ .Contenido{
+    z-index: -2;
+} 
+
 
 .cont-menu .bloque{
     width: 100%;

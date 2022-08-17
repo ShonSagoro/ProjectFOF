@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../resources/CSS/BarraYOpciones.css">
+    <link rel="stylesheet" href="../../resources/CSS/vistaInventario/BarraOpcionesInventario.css">
     <link rel="stylesheet" href="../../resources/CSS/vistaInventario/inventarioRegistro.css">
-    <script src="../../resources/JavaScript/Administrador/contadorRegistro.js" type="module"></script>
+    <script src="../../resources/JavaScript/Administrador/registroProducto.js" type="module"></script>
+
     <title>Inventario Registro producto</title>
 </head>
 <body>
@@ -34,12 +35,13 @@
             <a a href="../../index.html"><input type="button" value="Cerrar Sesion" class="btnCerrarSesion"></a>
         </div>
     </div>
+    <div class="capa"></div>
     <div class="registro">
         <h3>Registro de producto</h3>
         <label>Nombre</label>
         <input type="text" id="NombrePR" placeholder="Nombre">
         <label>Descripcion</label>
-        <textarea id="DescripcionPR" onkeypress="Contador_caracteres()" rows="4" maxlength="250" minlength="3" placeholder="Descripcion"></textarea>
+        <textarea id="DescripcionPR" rows="4" maxlength="250" minlength="3" placeholder="Descripcion"></textarea>
         <span class="textarea_count" id="textarea_count">0/250 (Max. 250 caracteres)</span><br><br>
         <!-- <input type="text" id="DescripcionPR" placeholder="Descripcion"><br> -->
         <label>Costo</label>
@@ -48,6 +50,5 @@
         <lable id="ValidacionProducto"></lable>
     </div>
 </body>
-<script src="../../resources/JavaScript/Administrador/registroProducto.js" type="module"></script>
 
 </html>

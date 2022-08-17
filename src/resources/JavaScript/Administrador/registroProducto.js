@@ -1,10 +1,25 @@
 const conexion=require('../../resources/JavaScript/Administrador/conexion/conectarAdministrador.js');
 const botonRegistrar=document.querySelector('#btnRegistrar');
+const textareaDescripcion=document.querySelector('#DescripcionPR');
 
-const Contador_caracteres=()=>{
-    let caracteres=document.getElementById('DescripcionPR').value.length;
-    document.getElementById('textarea_count').innerHTML=caracteres+"/250 (Max. 250 caracteres)";
-}
+textareaDescripcion.addEventListener("keypress",(e)=>{
+    const descLength=textareaDescripcion.value.length+1;
+    const maxLength=250;
+    if(descLength<=maxLength){
+        document.getElementById('textarea_count').innerHTML=descLength+"/250 (Max. 250 caracteres)";
+    }
+});
+
+textareaDescripcion.addEventListener("keydown",(e)=>{
+    if(e.key==="Backspace"){
+        const descLength=textareaDescripcion.value.length-1;
+        if(descLength>=0){
+            document.getElementById('textarea_count').innerHTML=descLength+"/250 (Max. 250 caracteres)";
+        }  
+    }
+});
+
+
 
 botonRegistrar.addEventListener('click', ()=>{
     let texto;
@@ -12,7 +27,7 @@ botonRegistrar.addEventListener('click', ()=>{
     let descripcionPR =document.getElementById("DescripcionPR").value;
     let costoPR =document.getElementById("CostoPR").value;
     if(nombrePR!="" && descripcionPR!=""){
-        if(costoPR>0 ){
+        if(costoPR>0 &&descripcionPR.length<=250 ){
             conexion.query("SELECT * FROM Producto WHERE nombre='"+nombrePR+"'", (error, rows, fields)=>{
                 if(error){
                     throw error;
@@ -36,7 +51,7 @@ botonRegistrar.addEventListener('click', ()=>{
             }
             });
         }else{
-            texto="Precio del producto invalido";  
+            texto="Precio del producto invalido o descripcion muy larga";  
         }
 
     }else{

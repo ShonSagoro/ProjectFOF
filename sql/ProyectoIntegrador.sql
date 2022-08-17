@@ -98,7 +98,7 @@ insert into Producto values (0,'Torta de cochito','Torta con jamon, queso, sus v
 insert into Producto values (0,'Torta de cochinita pibil','Torta con jamon, queso, sus verduras, rajas y cochinita pibil','30');
 insert into Producto values (0,'Choco-Flan','Un pastel imposible, donde la base es pastel de chocolate y la copa es de flan','12');
 
-delete from Pedido where id_pedido='12';
+delete from Pedido where id_pedido='1';
 SELECT *
         FROM Pedido_producto
         INNER JOIN producto
@@ -115,7 +115,7 @@ select * from Pedido_producto;
 SELECT * FROM pedido;
 use proyectointegrador_fof;
 SELECT *
-FROM Pedido_producto
+FROM Pedido_productoproducto
 INNER JOIN producto
 ON Pedido_producto.producto_id_producto=producto.id_producto
 INNER JOIN pedido
